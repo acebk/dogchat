@@ -10,7 +10,7 @@
 
   <body>
     <nav class="navbar is-link" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
+      <div class="navbar-brand">
           <a class="navbar-item has-text-weight-bold is-size-4" href="https://bulma.io">
             DogChat
           </a>
@@ -21,7 +21,6 @@
             <span aria-hidden="true"></span>
           </a>
         </div>
-
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item">
@@ -62,20 +61,29 @@
           </div>
         </div>
       </nav>
-  <section class="section">
 
-  <p class = "is-size-3 ">My Feed</p>
-  </section>
-  <form class="box">
-<div class="field">
-  <label class="label">New Post</label>
-  <div class="control">
-    <textarea class="textarea" placeholder="Textarea"
-    rows=1></textarea>
+  <strong class = "is-size-3">My Feed</strong>
+  <div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>John Smith</strong> <small>@johnsmith</small> <small>July 4th, 6pm</small>
+          <br>
+          <textarea class="textarea" placeholder="New Post" rows=1></textarea>
+        </p>
+      </div>
+      <div>
+        <button class="button is-link mt-4 mb-4">Post</button>
+      </div>
+    </div>
+  </article>
   </div>
-</div>
-<button class="button is-link mt-4 mb-4">Post</button>
-</form>
   <div class="box">
   <article class="media">
     <div class="media-left">
@@ -109,7 +117,6 @@
       </nav>
     </div>
   </article>
-</div>
-
-  </body>
+  </div>
+</body>
 </html>
