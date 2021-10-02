@@ -23,7 +23,5 @@ def feed():
         "DateTime": datetime(2021,8,4,17,2,5),
         "Picture": "melba_profile.png"
     }
-    test_posts= [
-
-    ]
+    test_posts= [post1,post2]
     return render_template('index.html', posts=test_posts)
