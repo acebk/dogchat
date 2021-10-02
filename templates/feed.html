@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+{% block content %}
+  {% for post in posts %}
+
+  <div class="box">
+    <article class="media">
+      <div class="media-left">
+        <figure class="image is-64x64">
+          <img src= "{{url_for('static',filename=post["Picture"])}}" alt="Image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong>{{post["Name"]}}</strong> <small>{{post['Username']}}</small> <small>{{post["DateTime"]}}</small>
+            <br>
+            {{post['Text']}}
+          </p>
+        </div>
+        <nav class="level is-mobile">
+          <div class="level-left">
+            <a class="level-item" aria-label="like">
+              <span class="icon is-small">
+                <i class="far fa-heart"></i>
+              </span>
+              <span>{{post["LikeCount"]}}</span>
+            </a>
+            <a class="level-item" aria-label="comments">
+              <span class="icon is-small">
+                <i class="far fa-comment"></i>
+              </span>
+              <span>{{post['CommentCount']}}</span>
+            </a>
+        </div>
+        </nav>
+      </div>
+    </article>
+  </div>
+
+  {% endfor %}
+{% endblock %}
