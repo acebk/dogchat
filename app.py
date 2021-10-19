@@ -25,3 +25,7 @@ def feed():
     }
     test_posts= [post1,post2]
     return render_template('feed.html', posts=test_posts)
+
+@app.route("/comments")
+def comments():
+    return render_template('comments.html')
