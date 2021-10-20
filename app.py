@@ -24,8 +24,8 @@ def feed():
         "Picture": "melba_profile.png"
     }
     test_posts= [post1,post2]
-    return render_template('feed.html', posts=test_posts)
+    return render_template('feed.html', posts=test_posts, title = "My Feed")
 
 @app.route("/comments")
 def comments():
-    return render_template('comments.html')
+    return render_template('comments.html',title = "Comments")
