@@ -7,12 +7,20 @@ comment1 = {
     "Picture":"charlie_profile_picture.png",
     "DateTime" : datetime(2021, 7, 1, 18, 0, 0)
 }
+comment2 = {
+    "Text" : "See you there!!!",
+    "Name": "Jenna",
+    "Username": "jennnnn",
+    "Picture":"charlie_profile_picture.png",
+    "DateTime" : datetime(2021, 7, 1, 23, 5, 0)
+}
+
 post1 = {
     "Text":"I can't wait to go to the park today",
     "Name":"Melba",
     "Username":"melba",
     "Likes":['charlie','jenna'],
-    "Comments":[comment1],
+    "Comments":[comment1,comment2],
     "DateTime": datetime(2021,7,1,17,0,0),
     "Picture": "melba_profile.png"
 }
