@@ -21,7 +21,7 @@
   </div>
   </article>
 </div>
-  {% for post in posts %}
+  {% for post in posts.values() %}
 
   <div class="box">
     <article class="media">
@@ -46,7 +46,7 @@
               </span>
               <span>{{post["Likes"] | count}}</span>
             </a>
-            <a class="level-item" aria-label="comments">
+            <a class="level-item" aria-label="comments" href="{{url_for('comments', post_id=)}}">
               <span class="icon is-small">
                 <i class="far fa-comment"></i>
               </span>

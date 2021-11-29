@@ -14,6 +14,13 @@ comment2 = {
     "Picture":"charlie_profile_picture.png",
     "DateTime" : datetime(2021, 7, 1, 23, 5, 0)
 }
+comment3= {
+    "Text" : "You could say that again!",
+    "Name": "Jenna",
+    "Username": "jennnnn",
+    "Picture":"charlie_profile_picture.png",
+    "DateTime" : datetime(2021, 8, 5, 23, 5, 0)
+}
 
 post1 = {
     "Text":"I can't wait to go to the park today",
@@ -29,9 +36,12 @@ post2 = {
     "Name":"Melba",
     "Username":"melba",
     "Likes":[],
-    "Comments":[],
+    "Comments":[comment3],
     "DateTime": datetime(2021,8,4,17,2,5),
     "Picture": "melba_profile.png"
 }
 
-test_posts= [post1,post2]
+test_posts = {
+    1 : post1,
+    2 : post2
+}
