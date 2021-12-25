@@ -49,7 +49,7 @@ test_posts = {
 }
 
 melba_posts = {
-    1:post1
+    1:post1,
     2:post2
 }
 
@@ -61,16 +61,16 @@ charlie_posts = {
 
 }
 
-melba{
+melba = {
     "Name": "Melba",
     "Bio":"My name is Melba. I'm a miniature golden-doodle.  My favorite place in the world is Discovery Park in Seattle, Washington.",
-    "Username": :"melba",
+    "Username": "melba",
     "Picture": "melba_profile.png",
     "Birthday":datetime(2013, 2, 14),
     "Posts": melba_posts
 }
 
-charlie{
+charlie = {
     "Name": "Charlie",
     "Bio": "Hi, I'm Charlie!  I'm a standard poodle and I love to nap.",
     "Username": "chucky",
@@ -79,7 +79,7 @@ charlie{
     "Posts": charlie_posts
 }
 
-jenna{
+jenna = {
     "Name": "Jenna",
     "Bio": "Hello, I'm Jenna. I'm a young pup with big aspirations",
     "Username": "jennnnn",
@@ -88,7 +88,7 @@ jenna{
     "Posts" : jenna_posts
 }
 
-dogs{
+dogs = {
     "melba":melba,
     "chucky": charlie,
     "jennnnn": jenna

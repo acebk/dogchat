@@ -11,11 +11,13 @@
   <div class="media-content">
     <div class="content">
       <p>
+        <a href = "{{url_for('profile',username=post['Username'])}}">
         <strong>{{ post["Name"] }}</strong> @{{ post["Username"] }}
         <br>
         {{ post["Text"] }}
         <br>
         <small><a>Like</a> · <a>Reply</a> · {{ post["DateTime"]}}</small>
+        </a>
       </p>
     </div>
     {% for comment in post["Comments"] %}
@@ -28,11 +30,13 @@
       <div class="media-content">
         <div class="content">
           <p>
+            <a href = "{{url_for('profile',username=post['Username'])}}">
             <strong>{{ comment["Name"] }}</strong> @{{ comment["Username"] }}
             <br>
             {{ comment["Text"] }}
             <br>
             <small><a>Like</a> · <a>Reply</a> · {{ comment["DateTime"] }}</small>
+            </a>
           </p>
         </div>
       </div>

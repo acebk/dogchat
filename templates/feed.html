@@ -4,15 +4,17 @@
   <article class="media">
     <div class="media-left">
       <figure class="image is-64x64">
-        <img src= "{{url_for('static',filename=posts[1]['Picture'])}}" alt="Image">
+        <img src= "{{url_for('static',filename="melba_profile.png")}}" alt="Image">
       </figure>
     </div>
   <div class="media-content">
     <div class="content">
       <p>
+        <a href = "{{url_for('profile', username='melba')}}"
         <strong>Melba</strong> <small>@melba</small>
         <br>
         <textarea class="textarea" placeholder="New Post" rows=1></textarea>
+        </a>
       </p>
     </div>
     <div>
@@ -33,9 +35,11 @@
       <div class="media-content">
         <div class="content">
           <p>
+            <a href = "{{url_for('profile',username=post['Username'])}}">
             <strong>{{post["Name"]}}</strong> <small>@{{post['Username']}}</small> <small>{{post["DateTime"]}}</small>
             <br>
             {{post['Text']}}
+            </a>
           </p>
         </div>
         <nav class="level is-mobile">

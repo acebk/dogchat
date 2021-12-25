@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from data import test_posts, post1
+from data import test_posts, dogs
 
 app = Flask(__name__)
 
@@ -11,3 +11,8 @@ def feed():
 def comments(post_id):
     post=test_posts[post_id]
     return render_template('comments.html',title = "Comments", post=post)
+
+@app.route("/dogs/<string:username>")
+def profile(username):
+    dog = dogs[username]
+    return render_template('profile.html', title = dog['Name'], dog = dog)
