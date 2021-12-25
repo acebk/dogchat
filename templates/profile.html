@@ -7,13 +7,13 @@
       <article class="media">
         <figure class = "media-left">
           <p class="image is-128x128">
-            <img src = "{{url_for('static', filename=dog{'Picture'})}}"
+            <img src = "{{url_for('static', filename=dog['Picture'])}}"
           </p>
         </figure>
         <div class="media-content">
           <div class="content">
             <p>
-              <a href="{{url_for('profile'), username=dog['Username']}}"
+              <a href="{{url_for('profile', username=dog['Username'])}}"
               <strong>{{dog['Name']}}</strong>
                           <small>@{{dog['Username']}}</small>
                       </a>
@@ -69,7 +69,7 @@
                               <span>{{post['Likes'] | count}}</span>
                           </span>
                       </a>
-                      <a class="level-item" aria-label="like" href="{{url_for('comments', post_id=post['PostId'])}}">
+                      <a class="level-item" aria-label="like" href="{{url_for('comments', post_id=post['post_id'])}}">
                           <span class="icon-text">
                               <span class="icon is-small">
                                   <i class="fas fa-comment"></i>
