@@ -46,7 +46,7 @@
               </span>
               <span>{{post["Likes"] | count}}</span>
             </a>
-            <a class="level-item" aria-label="comments" href="{{url_for('comments', post_id=)}}">
+            <a class="level-item" aria-label="comments" href="{{url_for('comments',post_id=post[post_id])}}">
               <span class="icon is-small">
                 <i class="far fa-comment"></i>
               </span>

@@ -23,6 +23,7 @@ comment3= {
 }
 
 post1 = {
+    "post_id" = 1,
     "Text":"I can't wait to go to the park today",
     "Name":"Melba",
     "Username":"melba",
@@ -32,6 +33,7 @@ post1 = {
     "Picture": "melba_profile.png"
 }
 post2 = {
+    "post_id" = 2, 
     "Text":"I could really go for a treat right now",
     "Name":"Melba",
     "Username":"melba",
