@@ -27,13 +27,13 @@
     <article class="media">
       <div class="media-left">
         <figure class="image is-64x64">
-          <img src= "{{url_for('static',filename=post["Picture"])}}" alt="Image">
+          <img src= "{{url_for('static',filename=post['Picture'])}}" alt="Image">
         </figure>
       </div>
       <div class="media-content">
         <div class="content">
           <p>
-            <strong>{{post["Name"]}}</strong> <small>{{post['Username']}}</small> <small>{{post["DateTime"]}}</small>
+            <strong>{{post["Name"]}}</strong> <small>@{{post['Username']}}</small> <small>{{post["DateTime"]}}</small>
             <br>
             {{post['Text']}}
           </p>

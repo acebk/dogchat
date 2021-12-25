@@ -35,7 +35,7 @@ post2 = {
     "Text":"I could really go for a treat right now",
     "Name":"Melba",
     "Username":"melba",
-    "Likes":[],
+    "Likes":['Melba'],
     "Comments":[comment3],
     "DateTime": datetime(2021,8,4,17,2,5),
     "Picture": "melba_profile.png"
