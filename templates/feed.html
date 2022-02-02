@@ -2,27 +2,26 @@
 {% block content %}
 <div class="box">
   <article class="media">
-    <div class="media-left">
-      <figure class="image is-64x64">
-        <img src= "{{url_for('static',filename="melba_profile.png")}}" alt="Image">
-      </figure>
+    <div class="media-content">
+      <div class "media" >
+        <figure class = "image is-64x64">
+          <img src = "{{ url_for('static', filename = user +'_profile.png') }}">
+        </figure>
+        </div>
+      <div class="content">
+        <p>
+          <strong>New Post</strong> <small>@{{ user }}</small>
+          <br>
+          <form class="" action="index.html" method="post">
+            <input type="text"/>
+            <input type="submit" name="submit"/>
+          </form>
+        </p>
+      </div>
     </div>
-  <div class="media-content">
-    <div class="content">
-      <p>
-        <a href = "{{url_for('profile', username='melba')}}"
-        <strong>Melba</strong> <small>@melba</small>
-        <br>
-        <textarea class="textarea" placeholder="New Post" rows=1></textarea>
-        </a>
-      </p>
-    </div>
-    <div>
-      <button class="button is-link mt-4 mb-4">Post</button>
-    </div>
-  </div>
   </article>
 </div>
+
   {% for post in posts.values() %}
 
   <div class="box">

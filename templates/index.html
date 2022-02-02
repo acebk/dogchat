@@ -29,12 +29,12 @@
 
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">
-                More
+                Feed
               </a>
 
               <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  About
+                <a class="navbar-item" href = "{{url_for('profile',username=user)}}">
+                  {{ user }}
                 </a>
                 <a class="navbar-item">
                   Jobs
